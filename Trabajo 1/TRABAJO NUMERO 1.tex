@@ -1,0 +1,212 @@
+\documentclass[12pt]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+\title{\textbf{
+UNIVERSIDAD NACIONAL SAN CRISTOBAL DE HUAMANGA \\Práctica 01\\
+
+\begin{center}
+\thispagestyle{empty}
+{\large {\textbf{\sc Universidad Nacional de San Cristóbal de Huamanga}}}\\
+\vspace{1.5mm}
+{\large {\sc Facultad de Ingeniería de Minas, Geología y Civil}}\\
+\vspace{1.5mm}
+{\large {\sc Escuela Profesional ciencias físico matemática}}\\
+\vspace{1.5mm}
+%{\Large {\sc Área de Investigación: Estructuras y Construcciones}}\\
+\end{center}
+\begin{center}
+\includegraphics[scale=0.8]{graficos/UNSCH.png} 
+
+
+
+
+\vspace{-1cm}
+\begin{center}
+\vfill
+{\normalsize {\sc  RESOLUCIONES DE EJERCICIO NÚMERO 1}}\\[0.3cm]
+
+\end{center}
+
+
+\vspace*{\stretch{1}}
+\begin{center}
+{\normalsize{\sc  ALUMNO:}}\\[0.3cm]
+{\large QUISPE GALINDO, wilmer rodrigo} \\[0.1cm]
+\end{center}
+
+\vspace*{\stretch{1}}
+\begin{center}
+{\normalsize {\sc  PROFESOR:}}\\[0.1cm]
+{\large ROMERO PLASENCIA, Jackson} \\[0.1cm]
+\end{center}
+
+\vspace*{\stretch{2}}
+\begin{center}
+\normalsize \textsc{AYACUCHO - PERÚ}
+\end{center}
+
+\begin{center}
+{\normalsize {\sc  2019}}
+\end{center}
+
+
+
+
+\date{}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item  Demuestre que $\mathcal{F}$ es una $\sigma$ - álgebra de subconjuntos de si, y solo si,satisface las siguientes propiedades:
+\begin{enumerate}[a)]
+
+\item $\phi \in \mathcal{F}$\\[0.2cm]
+Demostración\\[0.2cm]
+Si $\Omega \in \mathcal{F}$ y $ \mathcal{F}$ colección cerrada\\[0.2cm]
+$\Omega^c = \phi\in\mathcal{F}$\\[0.2cm]
+
+\item A $\in \mathcal{F}\longrightarrow A^{c} \in\mathcal{F}$\\[0.2cm]
+Demostración\\[0.2cm]
+$A_1\in \mathcal{F} \longrightarrow {A_1^c} \in \mathcal{F} $\\[0.2cm]
+$A_2\in \mathcal{F} \longrightarrow {A_2^c} \in \mathcal{F} $\\[0.2cm]
+
+
+\item $A_1,A_2,... \in \mathcal{F} \longrightarrow\displaystyle\bigcap_{n=1}^{\infty}{A_n \in N}$\\[0.2cm]
+Demostración:\\[0.2cm]
+Por definición: $\{A_n\}_{n \in N} \in \mathcal{F} \Rightarrow \{A_n\}^c_{n \in N}\in \mathcal{F}$\\[0.2cm]
+Entonces $\displaystyle\bigcup_{n=1}^{\infty}{A_n}\in \mathcal{F}$ y a su vez $\displaystyle\bigcup_{n=1}^{\infty}{A_n}^c\in \mathcal{F}$\\[0.2cm]
+Luego $\left(\displaystyle\bigcup_{n=1}^{\infty}{A_n^c}\right)^c = \displaystyle\bigcap_{n=1}^{\infty}{A_n \in N}$
+
+\end{enumerate}
+
+\item Sea $\mathcal{F}$ una $\sigma$ - álgebra; demuestre que $\mathcal{F}^c$ es una $\sigma$ - álgebra definida por: $\mathcal{F}^c$ = \{$A^c$: A $\in$ $\mathcal{F}$ \}\\[0.2cm]
+Demostración\\[0.2cm]
+Como $\mathcal{F}$ es una $\sigma$ - álgebra entonces cumple las siguientes propiedades:\\[0.2cm]
+\begin{enumerate}[1.]
+\item $\Omega \in \mathcal{F}  $
+\item A $\in \mathcal{F}\longrightarrow A^{c} \in\mathcal{F}$
+\item $A_1,A_2,... \in \mathcal{F} \longrightarrow\displaystyle\bigcup_{n=1}^{\infty}{A_n \in \mathcal{F}}$
+\end{enumerate}
+Supongamos que $\mathcal{F}^c$ es un $\sigma$ - álgebra $\Omega \in \mathcal{F}^c  $ que verifica la primera propiedad.\\[0.2cm]
+Luego como $\{A_n\}_{n \in N}$ es una sucesión esta definida:\\[0.2cm]
+$\{A_n\}\in \mathcal{F}^c \Rightarrow \{A_n\}^c \in  \mathcal{F}^c $ se verifica por la tercera propiedad\\[0.2cm]
+Ahora por la tercera propiedad verificamos que:\\[0.2cm]
+$A_1,A_2,... \in \mathcal{F}^c\Rightarrow \displaystyle\bigcup_{n=1}^{\infty}{A_n \in \mathcal{F}^c} = \{ A^c/ A \in \mathcal{F}\} $
+ 
+
+\item Sea $\{A_n\}_{n\in\mathbb{N}}$ la sucesión de eventos, definida por:
+\[A_n = \begin{cases} 
+      A  & \mbox{si } n= 1,3,5,...        \\[0.5cm]
+      A^c  & \mbox{si } n = 2,4,6,...
+ \end{cases} \]
+Determine el: $\lim\limits_{x \to \infty}A_n$\\[0.2cm]
+Solución\\[0.2cm]
+$\lim\limits_{n \to \infty}{inf}A_n =\displaystyle\bigcup_{n=1}^{\infty}\displaystyle\bigcap_{k=n}^{\infty}A_k = \displaystyle\bigcup_{n=1}^{\infty}\left(A \cap A^c\right)= \displaystyle\bigcup_{n=1}^{\infty}\phi = \phi $\\[0.2cm]
+$\lim\limits_{n \to \infty}{sup}A_n= \displaystyle\bigcap_{n=1}^{\infty}\displaystyle\bigcup_{k=n}^{\infty}A_k = \displaystyle\bigcap_{n=1}^{\infty}\left(A \cap A^c\right)= \displaystyle\bigcap_{n=1}^{\infty}\Omega = \Omega $\\[0.2cm]
+$\Rightarrow \lim\limits_{n \to \infty}{inf}A_n \not = \lim\limits_{n \to \infty}{sup}A_n $\\[0.2cm]
+$\therefore \lim\limits_{n \to \infty}A_n \nexists$
+
+
+
+\item Sea $\{A_n\}_{n\in\mathbb{N}}$ la sucesión de eventos, definida por:
+\[A_n = \begin{cases} 
+  A  & \mbox{si } \left[-1/n,0\right]  \\[0.5cm]
+  A^c  & \mbox{si } \left[0,1/n\right] \end{cases} \]
+Determine el: $\lim\limits_{x \to \infty}A_n$
+
+\item Sean $A_1,A_2,...$ eventos aleatorios, demuestre :
+\begin{enumerate}[a)]
+\item $P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)\geq 1-\displaystyle\sum_{i=1}^{n}$ $P\left(A_{i}\right)^c$\\[0.2cm]
+Demostración\\[0.2cm]
+Si: $P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)= P\left(\displaystyle\bigcup_{i=1}^{n}{A_i^c}\right)^c$\\[0.2cm]
+$P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)= 1- P\left(\displaystyle\bigcup_{i=1}^{n}{A_i^c}\right)$\\[0.2cm]
+Recuerde: $P\left(\displaystyle\bigcup_{i=1}^{n}{A_i}\right) \leqslant\displaystyle\sum_{i=1}^{n}$ $P\left(A_{i}\right)$\\[0.2cm]
+$\Rightarrow P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)= 1- P\left(\displaystyle\bigcup_{i=1}^{n}{A_i^c}\right) \geqslant 1-\displaystyle\sum_{i=1}^{n}$ $P\left(A_{i}\right)^c $
+
+\item Si $P\left(A_{i}\right) \geq 1-e$ para i=1,2,...,n entonces $P\left(\displaystyle\bigcap_{i=1}^{n}\right)\geq 1-ne$\\[0.2cm]
+
+Demostración\\[0.2cm]
+tenemos: $P\left(A_{i}\right)\geqslant 1-e$\\[0.2cm]
+	$\Rightarrow e \geqslant 1-P\left(A_{i}\right)$\\[0.2cm]
+	$ \displaystyle\prod_{i=1}^{n}e \geqslant \displaystyle\prod_{i=1}^{n}P\left(A_{i}\right)^c$\\[0.2cm]
+$ne \geqslant \displaystyle\prod_{i=1}^{n}\left(1- P{\left(A_{i}\right)}\right)\Rightarrow ne\geqslant 1-P\left(\displaystyle\bigcap_{i=1}^{n}A_i\right)$ \\[0.2cm]
+$\therefore P\left(\displaystyle\bigcap_{i=1}^{n}A_i\right)\geqslant 1-ne $
+			 
+		
+\item $P\left(\displaystyle\bigcap_{k=1}^{\infty}{A_k}\right) \geqslant 1-\displaystyle\sum_{i=1}^{\infty}P\left(A_{k}^{c}\right) $
+\end{enumerate}
+
+\item Demuestre las desigualdades de Boole\\[0.2cm]
+$P\left(\displaystyle\bigcup_{n=1}^{\infty}{A_n}\right) \leqslant \displaystyle\sum_{n=1}^{\infty}P\left(A_n\right) $\\[0.2cm]
+Por inducción para familia finita queremos demostrar que:\\[0.2cm]
+$P\left(A_1\cup A_2\cup A_3...\cup A_n\right) \leqslant P\left(A_1\right)+ P\left(A_2\right)+...+P\left(A_n\right)$	\\[0.2cm]
+Luego: para n=1\\[0.2cm]
+$P\left(A_1\right)\leqslant P\left(A_1\right) $ se cumple\\[0.2cm]
+para n=h\\[0.2cm]
+$P\left(A_1\cup A_2\cup A_3...\cup A_h\right)\leqslant P\left(A_1\right)+ P\left(A_2\right)+...+P\left(A_h\right)$ Hipótesis Inductivo.\\[0.2cm]
+para n=h+1\\[0.2cm]
+$P\left(A_1\cup A_2\cup A_3...\cup A_{h+1}\right)\leqslant P\left(A_1\right)+ P\left(A_2\right)+...+P\left(A_h+1\right)$\\[0.2cm]
+Para ello consideramos que:\\[0.2cm]
+$x=A_1\cup A_2\cup A_3...\cup A_n$, luego $P\left(x\right) \leqslant P\left(A_1\right)+ P\left(A_2\right)+...+P\left(A_h\right) $\\[0.2cm]
+Entonces:\\[0.2cm]
+$P\left(x \cup A_{h+1}\right)= P\left(x\right)+P\left(A_{h+1}\right)-P\left(x \cap A_{h+1}\right)$\\[0.2cm]
+Luego\\[0.2cm]
+$P\left(x\right)+P\left(A_{h+1}\right)-P\left(x \cap A_{h+1}\right)\leqslant P\left(A_1\right)+...+P\left(A_h\right)+P\left(A_{h+1}\right)-P\left(x \cap A_{h+1}\right)$\\[0.2cm]
+Así $P\left(x \cup A_{h+1}\right)\leqslant P\left(A_1\right)+...+P\left(A_h\right)+P\left(A_{h+1}\right) $\\[0.2cm]
+$P\left(A_1\cup A_2\cup A_3...\cup A_{h+1}\right)\leqslant P\left(A_1\right)+...+P\left(A_h\right)
+$\\[0.2cm]
+Por tanto:\\[0.2cm]
+$P\left(\displaystyle\bigcup_{n=1}^{\infty}{A_n}\right) \leqslant \displaystyle\sum_{n=1}^{\infty}P\left(A_n\right) $
+
+
+\item Sea $\{A_n\}n \in {N}$ una sucesión de eventos. Demuestre que:
+\begin{enumerate}[a)]
+\item $\left(\displaystyle\lim_{n\longrightarrow \infty}{inf}A_n\right)^c =\displaystyle\lim_{n\longrightarrow \infty} {sup}{A_n^c} $\\[0.2cm]
+Demostración\\[0.2cm]
+$\left(\displaystyle\lim_{n\longrightarrow \infty}{inf}A_n\right)^c=\left(\displaystyle\bigcup_{n=1}^{\infty}\displaystyle\bigcap_{k=n}^{\infty}{A_k}\right)^c = \displaystyle\bigcap_{n=1}^{\infty}\displaystyle\bigcup_{k=n}^{\infty}{A_k^c}=\displaystyle\lim_{n\longrightarrow \infty} {sup}{A_n^c}$
+
+\item $\left(\displaystyle\lim_{n\longrightarrow \infty}{sup}A_n\right)^c =\displaystyle\lim_{n\longrightarrow \infty} {inf}{A_n^c} $\\[0.2cm]
+Demostración\\[0.2cm]
+$\left(\displaystyle\lim_{n\longrightarrow \infty}{sup}A_n\right)^c =\left(\displaystyle\bigcap_{n=1}^{\infty}\displaystyle\bigcup_{k=n}^{\infty}{A_k}\right)^c =\displaystyle\bigcup_{n=1}^{\infty}\displaystyle\bigcap_{k=n}^{\infty}{A_k^c} = \displaystyle\lim_{n\longrightarrow \infty} {inf}{A_n^c} $
+
+\item $P\left(\displaystyle\lim_{n\longrightarrow \infty}{inf}A_n\right) =1-P\left(\displaystyle\lim_{n\longrightarrow \infty}{sup}A_n^c\right)$\\[0.2cm]
+Demostración\\[0.2cm]
+ $P\left(\displaystyle\lim_{n\longrightarrow \infty}{inf}A_n\right)=\left([P\displaystyle\bigcup_{n=1}^{\infty}\displaystyle\bigcap_{k=n}^{\infty}{A_n}]^c\right)^c = 1-P\left(\displaystyle\bigcup_{n=1}^{\infty}\displaystyle\bigcap_{k=n}^{\infty}{A_n}\right)^c  $\\[0.2cm]
+ = $ 1-P\left(\displaystyle\bigcap_{n=1}^{\infty}\displaystyle\bigcup_{k=n}^{\infty}{A_n^c}\right)= 1-P\left(\displaystyle\lim_{n\longrightarrow \infty}{sup}A_n^c\right) $
+ 
+
+\end{enumerate}
+
+\item Encuentre las condiciones sobre los eventos $A_1$ y $A_2$ para que la siguiente sucesión sea convergente.
+\[A_n = \begin{cases} 
+     A_1  & \mbox{si } $n es impar$   \\[0.5cm]
+      A_2  & \mbox{si }$ n es par$
+ \end{cases} \]
+Solución:\\[0.2cm]
+
+Para que la sucesión converja tiene que cumplir lo siguiente.
+
+\[\mathop {\lim }\limits_{n \to \infty } \inf {A_n} = \mathop {\lim }\limits_{n \to \infty } \sup {A_n} = A\]
+
+Por tanto la condición para que converja la sucesión es:
+
+\[{A_1} = [\frac{{ - 1}}{n},0] \forall n \in \mathds{N}
+]
+
+\[{A_{_2}} = [0,\frac{1}{n}];\forall n \in \mathds{N}
+]
+
+
+por lo que:
+
+
+\[\mathop {\lim }\limits_{n \to \infty } \inf {A_1} = \mathop {\lim }\limits_{n \to \infty } \sup {A_2} = {0}\]
+
+
+\end{enumerate}
+\end{document}
